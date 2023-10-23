@@ -1,0 +1,21 @@
+spring:
+  model:
+    package: com.g2it.realstate.authentication.model
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/property_mangement
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    hikari:
+      initialization-fail-timeout: 0
+      connection-timeout: 50000
+      idle-timeout: 300000
+      max-lifetime: 900000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      pool-name: ecommConnectionPool
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8087
