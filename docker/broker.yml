@@ -1,6 +1,6 @@
 spring:
   auth:
-    url: http://authentication-service:8090/authentication/validateToken
+    url: http://gateway-service:8090/authentication/validateToken
   kafka:
     consumer:
       bootstrap-servers: kafka:9092
