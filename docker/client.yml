@@ -1,6 +1,6 @@
 spring:
   auth:
-    url: http://localhost:8090/authentication/validateToken
+    url: http://authentication-service:8090/authentication/validateToken
   model:
     package: com.g2it.realstate.client.model
   datasource:
@@ -21,3 +21,11 @@ spring:
       ddl-auto: update
 server:
   port: 8083
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery-service:8761/eureka
