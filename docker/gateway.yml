@@ -5,27 +5,27 @@ spring:
     gateway:
       routes:
       - id: company
-        uri: http://localhost:8081/
+        uri: http://company-service:8081/
         predicates:
         - Path=/company/**
       - id: broker
-        uri: http://localhost:8082/
+        uri: http://broker-service:8082/
         predicates:
         - Path=/broker/**
       - id: client
-        uri: http://localhost:8083/
+        uri: http://client-service:8083/
         predicates:
         - Path=/client/**
       - id: property
-        uri: http://localhost:8084/
+        uri: http://property-service:8084/
         predicates:
         - Path=/property/**
       - id: mail
-        uri: http://localhost:8085/
+        uri: http://mail-service:8085/
         predicates:
         - Path=/mail/**  
       - id: authentication
-        uri: http://localhost:8087/
+        uri: http://authentication-service:8087/
         predicates:
         - Path=/authentication/**             
         

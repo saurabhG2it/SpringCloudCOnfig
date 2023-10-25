@@ -2,7 +2,7 @@ spring:
   model:
     package: com.g2it.realstate.authentication.model
   datasource:
-    jdbcUrl: jdbc:mysql://main-db/property_mangement
+    jdbcUrl: jdbc:mysql://localhost:3306/property_mangement
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
