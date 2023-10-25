@@ -1,0 +1,33 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  model:
+    package: com.g2it.realstate.mail.model
+  datasource:
+    jdbcUrl: jdbc:mysql://localhost:3306/property_mangement
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    hikari:
+      initialization-fail-timeout: 0
+      connection-timeout: 50000
+      idle-timeout: 300000
+      max-lifetime: 900000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      pool-name: ecommConnectionPool
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8085
+
