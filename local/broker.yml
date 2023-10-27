@@ -32,3 +32,8 @@ spring:
       ddl-auto: update
 server:
   port: 8082
+logging:
+  pattern:
+    console: "%-4relative [%thread] %-5level %logger{35} %X{CorrelationId} --- %msg %n"
+
+  # logging.pattern.console=%-4relative [%thread] %-5level %logger{35} %X{CorrelationId} --- %msg %n
