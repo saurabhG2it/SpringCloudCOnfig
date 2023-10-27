@@ -1,4 +1,6 @@
 spring:
+  auth:
+    url: http://localhost:8090/authentication/validateToken
   model:
     package: com.g2it.realstate.authentication.model
   datasource:

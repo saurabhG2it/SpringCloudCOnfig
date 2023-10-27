@@ -1,4 +1,6 @@
 spring:
+  auth:
+    url: http://localhost:8090/authentication/validateToken
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
